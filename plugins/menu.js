@@ -128,38 +128,38 @@ let pantek = 'https://a.uguu.se/GrttsiUy.jpg'
     let before = conn.menu.before || `
 ┌◪ *${ucapanWaktu} ${conn.getName(m.sender)}*
 ││
-│├❒ *Nama : %name*
-│├❒ *Xp : %totalexp*
-│├❒ *Limit : %limit*
-│├❒ *Level : %level*
-│├❒ *Premium : ${premium ? 'Yes' : 'Gratisan'}*
-│└❒ *Register : ${registered ? 'Yes' : 'No'}*
+│├🦈 *Nama : %name*
+│├🦈 *Xp : %totalexp*
+│├🦈 *Limit : %limit*
+│├🦈 *Level : %level*
+│├🦈 *Premium : ${premium ? 'Yes' : 'Gratisan'}*
+│└🦈 *Register : ${registered ? 'Yes' : 'No'}*
 │
 ├◪ *TIME ⏳*
 ││
-│├❒ *Hari: %week %weton*
-│├❒ *Tanggal: %date*
-│└❒ *Waktu:* _%time_
+│├🦈 *Hari: %week %weton*
+│├🦈 *Tanggal: %date*
+│└🦈 *Waktu:* _%time_
 │
 ├◪ *STATUS BOT*
 ││
-│├❒ *%totalreg* Pengguna
-│├❒ *${groupsIn.length}* Group Chat
-│├❒ *${chats.length}* Total Chat
-│├❒ _%uptime_ Online
-│└❒ *Battery : ${conn.battery ? `${conn.battery.value}%* ${conn.battery.live ? 'Sedang Di Cass' : 'Tidak Di Cass'}` : 'Wait....*'}
+│├🦈 *%totalreg* Pengguna
+│├🦈 *${groupsIn.length}* Group Chat
+│├🦈 *${chats.length}* Total Chat
+│├🦈 _%uptime_ Online
+│└🦈 *Battery : ${conn.battery ? `${conn.battery.value}%* ${conn.battery.live ? 'Sedang Di Cass' : 'Tidak Di Cass'}` : 'Wait....*'}
 │
 ├◪ *INFO*
 ││
-│├❒ *Owner Of This Bot*
-│├❒ _http://wa.me/6281220670449
+│├🦈 *Owner Of This Bot*
+│├🦈 _http://wa.me/6281220670449
 │
 └───────────────────────
 %readmore`
     let header = conn.menu.header || '┌──*「 ```%category``` 」*──'
     let body   = conn.menu.body   || '├◪ *%cmd%islimit*'
     let footer = conn.menu.footer || '└───────────────────────'
-    let after  = conn.menu.after  || (conn.user.jid == global.conn.user.jid ? '' : `Powered by https://wa.me/${global.conn.user.jid.split`@`[0]}`) + `\n\n*SPECIAL THANKS TO*\n\n*❒ Nurutomo*\n*❒ Drawl Nag*\n*❒ Caliph*\n*❒ KurrXd*\n*❒ RendyCraft*\n*❒ Adi Official*\n*❒ Penyedia Apikey*\n*❒ Creator Bot WhatsApp*\n*❒ Dan Seluruh Pengguna Bot ini*`
+    let after  = conn.menu.after  || (conn.user.jid == global.conn.user.jid ? '' : `Powered by https://wa.me/${global.conn.user.jid.split`@`[0]}`) + `\n\n*SPECIAL THANKS TO*\n\n*🦈 Nurutomo*\n*🦈 Drawl Nag*\n*🦈 Caliph*\n*🦈 KurrXd*\n*🦈 RendyCraft*\n*🦈 Adi Official*\n*🦈 Penyedia Apikey*\n*🦈 Creator Bot WhatsApp*\n*🦈 Dan Seluruh Pengguna Bot ini*`
     let _text  = before + '\n'
     for (let tag in groups) {
       _text += header.replace(/%category/g, tags[tag]) + '\n'
