@@ -15,7 +15,7 @@ let { MessageType, mentionedJid } = require('@adiwajshing/baileys')
 
 let handler  = async (m, { conn, usedPrefix: _p, command }) => {
 let old = performance.now()
-await conn.fakeReply(m.chat, '*「 ⚠️ 」Loading...*', '0@s.whatsapp.net', '*Menampilkan List Menu*', 'status@broadcast')
+await conn.fakeReply(m.chat, '*「 き⃟🦈 」sabar todd...*', '0@s.whatsapp.net', '*Menampilkan List Menu*', 'status@broadcast')
 const chats = conn.chats.all()
 const groups = chats.filter(v => v.jid.endsWith('g.us'))
 const groupsIn = groups.filter(v => !v.read_only)
