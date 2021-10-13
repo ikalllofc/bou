@@ -157,7 +157,7 @@ let pantek = 'https://a.uguu.se/GrttsiUy.jpg'
 └───────────────────────
 %readmore`
     let header = conn.menu.header || '┌──*「 ```%category``` 」*──'
-    let body   = conn.menu.body   || '├き⃟き⃟🦈 *%cmd%islimit*'
+    let body   = conn.menu.body   || '├き⃟🦈• *%cmd%islimit*'
     let footer = conn.menu.footer || '└───────────────────────'
     let after  = conn.menu.after  || (conn.user.jid == global.conn.user.jid ? '' : `Powered by https://wa.me/${global.conn.user.jid.split`@`[0]}`) + `\n\n*SPECIAL THANKS TO*\n\n*き⃟🦈 Nurutomo*\n*き⃟🦈 Drawl Nag*\n*き⃟🦈 Caliph*\n*き⃟🦈 KurrXd*\n*き⃟🦈 RendyCraft*\n*き⃟🦈 Adi Official*\n*き⃟🦈 Penyedia Apikey*\n*き⃟🦈 Creator Bot WhatsApp*\n*き⃟🦈 Dan Seluruh Pengguna Bot ini*`
     let _text  = before + '\n'
