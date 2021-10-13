@@ -128,38 +128,38 @@ let pantek = 'https://a.uguu.se/GrttsiUy.jpg'
     let before = conn.menu.before || `
 ┌◪ *${ucapanWaktu} ${conn.getName(m.sender)}*
 ││
-│├🦈 *Nama : %name*
-│├🦈 *Xp : %totalexp*
-│├🦈 *Limit : %limit*
-│├🦈 *Level : %level*
-│├🦈 *Premium : ${premium ? 'Yes' : 'Gratisan'}*
-│└🦈 *Register : ${registered ? 'Yes' : 'No'}*
+│├き⃟🦈 *Nama : %name*
+│├き⃟🦈 *Xp : %totalexp*
+│├き⃟🦈 *Limit : %limit*
+│├き⃟🦈 *Level : %level*
+│├き⃟🦈 *Premium : ${premium ? 'Yes' : 'Gratisan'}*
+│└き⃟🦈 *Register : ${registered ? 'Yes' : 'No'}*
 │
 ├◪ *TIME ⏳*
 ││
-│├🦈 *Hari: %week %weton*
-│├🦈 *Tanggal: %date*
-│└🦈 *Waktu:* _%time_
+│├き⃟🦈 *Hari: %week %weton*
+│├き⃟🦈 *Tanggal: %date*
+│└き⃟🦈 *Waktu:* _%time_
 │
 ├◪ *STATUS BOT*
 ││
-│├🦈 *%totalreg* Pengguna
-│├🦈 *${groupsIn.length}* Group Chat
-│├🦈 *${chats.length}* Total Chat
-│├🦈 _%uptime_ Online
-│└🦈 *Battery : ${conn.battery ? `${conn.battery.value}%* ${conn.battery.live ? 'Sedang Di Cass' : 'Tidak Di Cass'}` : 'Wait....*'}
+│├き⃟🦈 *%totalreg* Pengguna
+│├き⃟🦈 *${groupsIn.length}* Group Chat
+│├き⃟🦈 *${chats.length}* Total Chat
+│├き⃟🦈 _%uptime_ Online
+│└き⃟🦈 *Battery : ${conn.battery ? `${conn.battery.value}%* ${conn.battery.live ? 'Sedang Di Cass' : 'Tidak Di Cass'}` : 'Wait....*'}
 │
 ├◪ *INFO*
 ││
-│├🦈 *Owner Of This Bot*
-│├🦈 _http://wa.me/6281220670449
+│├き⃟🦈 *Owner Of This Bot*
+│├き⃟🦈 _http://wa.me/6281220670449
 │
 └───────────────────────
 %readmore`
     let header = conn.menu.header || '┌──*「 ```%category``` 」*──'
-    let body   = conn.menu.body   || '├◪ *%cmd%islimit*'
+    let body   = conn.menu.body   || '├き⃟き⃟🦈 *%cmd%islimit*'
     let footer = conn.menu.footer || '└───────────────────────'
-    let after  = conn.menu.after  || (conn.user.jid == global.conn.user.jid ? '' : `Powered by https://wa.me/${global.conn.user.jid.split`@`[0]}`) + `\n\n*SPECIAL THANKS TO*\n\n*🦈 Nurutomo*\n*🦈 Drawl Nag*\n*🦈 Caliph*\n*🦈 KurrXd*\n*🦈 RendyCraft*\n*🦈 Adi Official*\n*🦈 Penyedia Apikey*\n*🦈 Creator Bot WhatsApp*\n*🦈 Dan Seluruh Pengguna Bot ini*`
+    let after  = conn.menu.after  || (conn.user.jid == global.conn.user.jid ? '' : `Powered by https://wa.me/${global.conn.user.jid.split`@`[0]}`) + `\n\n*SPECIAL THANKS TO*\n\n*き⃟🦈 Nurutomo*\n*き⃟🦈 Drawl Nag*\n*き⃟🦈 Caliph*\n*き⃟🦈 KurrXd*\n*き⃟🦈 RendyCraft*\n*き⃟🦈 Adi Official*\n*き⃟🦈 Penyedia Apikey*\n*き⃟🦈 Creator Bot WhatsApp*\n*き⃟🦈 Dan Seluruh Pengguna Bot ini*`
     let _text  = before + '\n'
     for (let tag in groups) {
       _text += header.replace(/%category/g, tags[tag]) + '\n'
