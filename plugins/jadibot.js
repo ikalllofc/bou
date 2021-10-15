@@ -65,7 +65,7 @@ let handler  = async (m, { conn, args, usedPrefix, command }) => {
   } else throw 'Bot ini Cuman Numpang!\n\nChat Nomor ini https://wa.me/' + global.conn.user.jid.split`@`[0] + '?text=.jadibot untuk Menjadi Bot!'
 }
 handler.help = ['jadibot']
-handler.tags = ['jadibot']
+handler.tags = ['owner']
 
 handler.command = /^jadibot$/i
 handler.register = true
