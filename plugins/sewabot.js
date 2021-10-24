@@ -8,10 +8,10 @@ let handler = async m => m.reply(`
 
 ◪ *PEMBAYARAN BISA MELALUI*
 
-❒ _PULSA_
-❒ _GOPAY_
+❒ _PULSA_[089603042257] 
+❒ _GOPAY_[085363810820]
 ❒ _OVO_
-❒ _DANA_
+❒ _DANA_[089603042257] 
 
 ◪ 𝙆𝙀𝙐𝙉𝙏𝙐𝙉𝙂𝘼𝙉 𝙎𝙀𝙒𝘼 𝘽𝙊𝙏
 
